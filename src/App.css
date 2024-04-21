@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #987dfe;
+  color: white;
+}
+
+.table-wrapper {
+  margin: 50px auto;
+  display: flex;
+  width: 80%;
+  height: 800px;
+  border: 10px solid white;
+  border-radius: 20px;
+}
+.table-wrapper .leftside {
+  width: 30%;
+  background-color: white;
+  height: 100%;
+  padding: 0 30px;
+}
+.table-wrapper .leftside .completedcount {
+  padding-top: 50px;
+  color: #7c7a88;
+  font-size: 54px;
+}
+.table-wrapper .leftside .leftside_title {
+  margin-top: 50px;
+  color: #7c7a88;
+}
+.table-wrapper .leftside .inspiring {
+  color: #7c7a88;
+  margin-top: 50px;
+}
+.table-wrapper .rightside {
+  padding: 5% 10%;
+  width: 100%;
+}
+.table-wrapper .rightside .title {
+  margin-bottom: 40px;
+}
+.table-wrapper .rightside .addTodobar {
+  width: 100%;
+}
+.table-wrapper .rightside .addTodobar .addTodobar_input {
+  width: 100%;
+  height: 60px;
+}
+.table-wrapper .rightside .todolistcontainer {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.table-wrapper .rightside .todolistcontainer .todolist {
+  width: 90%;
+  max-height: 500px;
+  overflow: auto;
+}
+.table-wrapper .rightside .todolistcontainer .todolist::-webkit-scrollbar {
+  display: none;
+}
+.table-wrapper .rightside .todolistcontainer .todolist .todolistItem {
+  width: 100%;
+  list-style: none;
+  margin-bottom: 20px;
+}
+.table-wrapper .rightside .todolistcontainer .todolist .todolistItem .todolistItem_block {
+  width: 100%;
+  padding: 0 20px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.table-wrapper .rightside .todolistcontainer .todolist .todolistItem .todolistItem_block .left {
+  display: flex;
+  gap: 15px;
+}
+.table-wrapper .rightside .todolistcontainer .todolist .todolistItem .todolistItem_block .left .todoorder {
+  color: #7c7a88;
+}
+.table-wrapper .rightside .todolistcontainer .todolist .todolistItem .todolistItem_block .left .todoname {
+  color: #7c7a88;
+}
+.table-wrapper .rightside .todolistcontainer .todolist .todolistItem .todolistItem_block .right {
+  display: flex;
+  gap: 20px;
+}
+.table-wrapper .rightside .todolistcontainer .todolist .todolistItem .todolistItem_block .right .toggleComplete {
+  cursor: pointer;
+}
+.table-wrapper .rightside .todolistcontainer .todolist .todolistItem .todolistItem_block .right .delete {
+  cursor: pointer;
+}/*# sourceMappingURL=App.css.map */
